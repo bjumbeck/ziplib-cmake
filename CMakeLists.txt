@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.6)
+cmake_minimum_required(VERSION 3.11...3.20)
 project(ziplib)
 
 set (CMAKE_CXX_STANDARD 11)
@@ -154,3 +154,4 @@ source_group(sources								FILES ${src_root})
 
 add_library(${PROJECT_NAME} STATIC ${sources})
 set_target_properties(${PROJECT_NAME} PROPERTIES COMPILE_FLAGS " /wd4996")
+target_link_libraries(${PROJECT_NAME} bzip2 lzma zlib)
