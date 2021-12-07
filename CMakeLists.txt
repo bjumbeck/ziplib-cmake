@@ -2,7 +2,6 @@ cmake_minimum_required(VERSION 3.11...3.20)
 project(ziplib)
 
 set (CMAKE_CXX_STANDARD 11)
-add_definitions(-std=c++11)
 
 add_subdirectory(extlibs/bzip2)
 add_subdirectory(extlibs/lzma)
