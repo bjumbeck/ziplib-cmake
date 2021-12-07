@@ -1,8 +1,7 @@
-cmake_minimum_required(VERSION 2.6)
+cmake_minimum_required(VERSION 3.11...3.20)
 project(bzip2)
 
 set (CMAKE_CXX_STANDARD 11)
-add_definitions(-std=c++11)
 
 set(headers
 	bzlib.h
@@ -28,5 +27,3 @@ set(sources
 add_library(${PROJECT_NAME} STATIC ${sources})
 set_target_properties(${PROJECT_NAME} PROPERTIES COMPILE_DEFINITIONS "BZ_NO_STDIO")
 set_target_properties(${PROJECT_NAME} PROPERTIES COMPILE_FLAGS " /wd4996 /wd4244")
-
-
