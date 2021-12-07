@@ -1,8 +1,7 @@
-cmake_minimum_required(VERSION 2.6)
+cmake_minimum_required(VERSION 3.11...3.20)
 project(lzma)
 
 set (CMAKE_CXX_STANDARD 11)
-add_definitions(-std=c++11)
 
 set(headers
 	7z.h
